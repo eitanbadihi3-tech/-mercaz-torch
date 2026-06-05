@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl" data-theme="light">
 <head>
 <meta charset="UTF-8">
-<link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIten15HXoiDXqdeZ16LXldeoIOKAkyDXoNeZ15TXldecINec16fXldeX15XXqiDXldei157Xldeq15QiLAogICJzaG9ydF9uYW1lIjogIten15HXoiDXqdeZ16LXldeoIiwKICAiZGVzY3JpcHRpb24iOiAi157Xoteo15vXqiDXnNeg15nXlNeV15wg16nXmdei15XXqNeZINeq15XXqNeUINeV15TXpNeo16nXldeqINeX15zXlCIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZjdmNmYyIiwKICAidGhlbWVfY29sb3IiOiAiIzAxNjk2ZiIsCiAgImxhbmciOiAiaGUiLAogICJkaXIiOiAicnRsIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQtcHJpbWFyeSIsCiAgImNhdGVnb3JpZXMiOiBbCiAgICAicHJvZHVjdGl2aXR5IiwKICAgICJ1dGlsaXRpZXMiCiAgXSwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQTFNVElnTlRFeUlqNEtQSEpsWTNRZ2QybGtkR2c5SWpVeE1pSWdhR1ZwWjJoMFBTSTFNVElpSUhKNFBTSXhNREFpSUdacGJHdzlJaU13TVRZNU5tWWlMejRLUEhSbGVIUWdlRDBpTWpVMklpQjVQU0l6TkRBaUlIUmxlSFF0WVc1amFHOXlQU0p0YVdSa2JHVWlJR1p2Ym5RdGMybDZaVDBpTWpnd0lpQm1hV3hzUFNKM2FHbDBaU0lnWm05dWRDMW1ZVzFwYkhrOUluTmxjbWxtSWlCbWIyNTBMWGRsYVdkb2REMGlZbTlzWkNJKzE2bzhMM1JsZUhRK0Nqd3ZjM1puUGc9PSIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsCiAgICAgICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQTFNVElnTlRFeUlqNEtQSEpsWTNRZ2QybGtkR2c5SWpVeE1pSWdhR1ZwWjJoMFBTSTFNVElpSUhKNFBTSXhNREFpSUdacGJHdzlJaU13TVRZNU5tWWlMejRLUEhSbGVIUWdlRDBpTWpVMklpQjVQU0l6TkRBaUlIUmxlSFF0WVc1amFHOXlQU0p0YVdSa2JHVWlJR1p2Ym5RdGMybDZaVDBpTWpnd0lpQm1hV3hzUFNKM2FHbDBaU0lnWm05dWRDMW1ZVzFwYkhrOUluTmxjbWxtSWlCbWIyNTBMWGRsYVdkb2REMGlZbTlzWkNJKzE2bzhMM1JsZUhRK0Nqd3ZjM1puUGc9PSIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsCiAgICAgICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSIKICAgIH0KICBdCn0=">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -484,6 +484,143 @@ tbody tr:last-child td { border-bottom: none; }
 .toast.error { background: var(--color-error); }
 @keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 </style>
+
+<style id="mobile-upgrade">
+@media (max-width: 768px) {
+  .sidebar { display:none !important; }
+  .main { width:100% !important; }
+  .topbar { padding: 0 12px !important; gap: 8px !important; flex-wrap: wrap; height:auto !important; min-height:56px; }
+  .topbar-title { width:100%; order:1; font-size: 18px !important; }
+  .search-wrap { order:2; width:100%; max-width:none !important; }
+  .topbar-actions { order:3; width:100%; display:flex; justify-content:space-between; gap:8px; overflow-x:auto; }
+  .topbar-actions .btn, .topbar-actions label.btn { flex:1; justify-content:center; min-width:0; padding:8px 10px !important; font-size:12px !important; }
+  .content { padding: 12px !important; }
+  .kpi-grid, .grid-2, .grid-3, .form-row { grid-template-columns: 1fr !important; }
+  .card-header, .card-body { padding: 12px !important; }
+  table, thead, tbody, th, td, tr { display:block; }
+  thead { display:none; }
+  table { width:100%; }
+  tbody { display:flex; flex-direction:column; gap:12px; }
+  tbody tr {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    padding: 10px;
+  }
+  tbody td {
+    border: none !important;
+    padding: 6px 4px !important;
+    text-align: right !important;
+  }
+  tbody td:last-child > div {
+    display:flex; flex-wrap:wrap; gap:8px;
+  }
+  tbody td button { padding:6px 10px !important; font-size:12px !important; }
+  .modal {
+    width: calc(100% - 16px) !important;
+    max-width: none !important;
+    margin: 8px !important;
+    max-height: 92vh !important;
+  }
+  .modal-header, .modal-body, .modal-footer { padding-left: 14px !important; padding-right: 14px !important; }
+  .modal-footer { flex-direction:column; }
+  .modal-footer .btn { width:100%; justify-content:center; }
+  .form-input, .form-select, .form-textarea { font-size: 16px !important; }
+  .nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 16px rgba(0,0,0,.08);
+  }
+  .nav-mobile button {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:4px; padding:6px 2px; font-size:11px; color:var(--color-text-muted);
+  }
+  .nav-mobile button.active { color: var(--color-primary); font-weight:700; }
+  .nav-mobile svg { width:18px; height:18px; }
+  .app { padding-bottom: 78px; }
+}
+@media (min-width: 769px) {
+  .nav-mobile { display:none; }
+}
+
+/* FAB - Floating Add Button (mobile only) */
+.fab-add {
+  display: none;
+}
+@media (max-width: 768px) {
+  .fab-add {
+    display: flex;
+    position: fixed;
+    bottom: 88px;
+    left: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px oklch(from var(--color-primary) l c h / 0.4);
+    z-index: 999;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .fab-add:active {
+    transform: scale(0.93);
+    box-shadow: 0 2px 8px oklch(from var(--color-primary) l c h / 0.3);
+  }
+  .fab-add svg { width: 26px; height: 26px; }
+}
+
+@media (max-width: 768px) {
+  .modal { 
+    max-height: 90vh; 
+    overflow-y: auto;
+  }
+  .modal-body {
+    max-height: 65vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #add-record-modal .form-input,
+  #add-record-modal .form-select,
+  #add-record-modal .form-textarea {
+    font-size: 16px !important;
+  }
+}
+</style>
+
+
+<style id="color-buttons-upgrade">
+.btn-primary{background:#0f766e !important;color:#fff !important;border:none !important;}
+.btn-primary:hover{background:#115e59 !important;}
+.btn-secondary{background:#e0f2fe !important;color:#075985 !important;border:1px solid #7dd3fc !important;}
+.btn-success{background:#16a34a !important;color:#fff !important;border:none !important;}
+.btn-warning{background:#ea580c !important;color:#fff !important;border:none !important;}
+.btn-error{background:#dc2626 !important;color:#fff !important;border:none !important;}
+.btn-ghost{background:#f3f4f6 !important;color:#374151 !important;border:1px solid #d1d5db !important;}
+.topbar-actions .btn, .topbar-actions label.btn{box-shadow:0 2px 8px rgba(0,0,0,.08);}
+.nav-mobile button.active{background:#ecfeff;border-radius:12px;color:#0f766e !important;}
+.badge-new{background:#ccfbf1 !important;color:#115e59 !important;}
+.badge-scheduled{background:#fef3c7 !important;color:#92400e !important;}
+.badge-confirmed{background:#dcfce7 !important;color:#166534 !important;}
+.badge-cancelled{background:#fee2e2 !important;color:#991b1b !important;}
+.badge-postponed{background:#ffedd5 !important;color:#9a3412 !important;}
+.badge-pending{background:#e5e7eb !important;color:#374151 !important;}
+.client-actions .btn{font-weight:700 !important;}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <div class="app">
@@ -1030,6 +1167,16 @@ tbody tr:last-child td { border-bottom: none; }
         <label class="form-label">טלפון</label>
         <input class="form-input" id="new-phone" placeholder="05X-XXXXXXX" type="tel">
       </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">שם רב / רבנית</label>
+          <input class="form-input" id="new-rabbi" placeholder="שם הרב/ת">
+        </div>
+        <div class="form-group">
+          <label class="form-label">כתובת לקוח</label>
+          <input class="form-input" id="new-address" placeholder="רחוב, עיר">
+        </div>
+      </div>
       <div class="form-group">
         <label class="form-label">סוג שיעור / הפרשת חלה</label>
         <select class="form-select" id="new-type">
@@ -1235,7 +1382,7 @@ function renderDashboard() {
     <div style="display:flex;justify-content:space-between;align-items:center;padding:var(--space-2) 0;border-bottom:1px solid var(--color-divider)">
       <div>
         <div style="font-size:var(--text-sm);font-weight:600">${r.first} ${r.last}</div>
-        <div style="font-size:var(--text-xs);color:var(--color-text-muted)">${r.type} | ${r.phone}</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-muted)">${r.type} | ${r.phone}</div>${r.rabbi ? `<div style="font-size:var(--text-xs);color:var(--color-text-muted)">🧑‍🏫 ${r.rabbi}</div>` : ``}${r.address ? `<div style="font-size:var(--text-xs);color:var(--color-text-muted)">📍 ${r.address}</div>` : ``}
       </div>
       <div style="display:flex;gap:var(--space-2)">
         <button class="btn btn-primary" style="padding:4px 10px;font-size:var(--text-xs)" onclick="quickSchedule(${r.id})">קבע</button>
@@ -1249,7 +1396,7 @@ function renderRecords(filter='all') {
   tbody.innerHTML = filtered.map(r => `
     <tr>
       <td><strong>${r.first} ${r.last}</strong></td>
-      <td style="direction:ltr;text-align:right">${r.phone}</td>
+      <td style="direction:ltr;text-align:right">${r.phone}<br>${r.rabbi ? `<span class="text-xs text-muted">🧑‍🏫 ${r.rabbi}</span><br>` : ``}${r.address ? `<span class="text-xs text-muted">📍 ${r.address}</span>` : ``}</td>
       <td>${r.type}</td>
       <td>${r.date ? r.date + (r.time ? ' ' + r.time : '') : '—'}</td>
       <td><span class="badge ${getBadgeClass(r.status)}">${statusLabels[r.status]}</span></td>
@@ -1259,12 +1406,26 @@ function renderRecords(filter='all') {
           ${r.status === 'confirmed' ? `<button class="btn btn-secondary" style="padding:3px 8px;font-size:var(--text-xs);background:#e0f0ff;color:#1565c0" onclick="actionComplete(${r.id})">✓ התקיים</button>` : ''}
           ${r.date && r.status !== 'cancelled' ? `<button class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="actionCancel(${r.id})">בטל</button>` : ''}
           ${r.date && r.status !== 'cancelled' ? `<button class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="actionPostpone(${r.id})">דחה</button>` : ''}
-          ${!r.date ? `<button class="btn btn-primary" style="padding:3px 8px;font-size:var(--text-xs)" onclick="quickSchedule(${r.id})">קבע</button>` : ''}
-          <button class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="showHistory(${r.id})">היסטוריה</button>
-          <button class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#25D366;color:white" onclick="quickWa(${r.id})">📱 WA</button>
+          ${!r.date ? `<button type="button" class="btn btn-primary" style="padding:3px 8px;font-size:var(--text-xs)" onclick="quickSchedule(${r.id})">קבע</button>` : ''}
+          <button type="button" class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="showHistory(${r.id})">היסטוריה</button>
+          <button type="button" class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#e53e3e;color:white" onclick="deleteRecord(${r.id})">🗑️ מחק</button>
+          <button type="button" class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#25D366;color:white" onclick="quickWa(${r.id})">📱 WA</button>
         </div>
       </td>
     </tr>`).join('');
+}
+
+
+function deleteRecord(id) {
+  const r = records.find(x => x.id === id);
+  if (!r) return;
+  if (!confirm('למחוק את ' + r.first + ' ' + r.last + '?')) return;
+  records = records.filter(x => x.id !== id);
+  _saveLocalStorage();
+  renderRecords();
+  renderDashboard();
+  if (typeof updateFollowupKpis === 'function') updateFollowupKpis();
+  toast(r.first + ' ' + r.last + ' – נמחק ✅', 'success');
 }
 
 function filterRecords(val) { renderRecords(val); }
@@ -1298,11 +1459,19 @@ function addRecord() {
   const type = document.getElementById('new-type').value;
   const source = document.getElementById('new-source').value.trim();
   const notes = document.getElementById('new-notes').value.trim();
+  const rabbi = (document.getElementById('new-rabbi')||{value:''}).value.trim();
+  const address = (document.getElementById('new-address')||{value:''}).value.trim();
   if(!first || !last || !phone) { toast('יש למלא שם וטלפון', 'error'); return; }
-  const rec = { id: nextId++, first, last, phone, type, status:'new', source, date:'', time:'', notes, attempts:0, history:[{action:'נוצרה רשומה',date:new Date().toLocaleDateString('he-IL').substring(0,5)}] };
+  const rec = { id: generateRecordId(), first, last, phone, type, status:'new', source, rabbi, address, date:'', time:'', notes, attempts:0, history:[{action:'נוצרה רשומה',date:new Date().toLocaleDateString('he-IL').substring(0,5)}] };
   records.push(rec);
   closeModal('add-record-modal');
-  saveToStorage();
+  ['new-first','new-last','new-phone','new-source','new-notes','new-rabbi','new-address'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.value = '';
+  });
+  const typeEl = document.getElementById('new-type');
+  if(typeEl) typeEl.selectedIndex = 0;
+  _saveLocalStorage();
   toast('רשומה חדשה נוספה בהצלחה! ✓', 'success');
   renderDashboard();
 }
@@ -1330,7 +1499,7 @@ function confirmQuickSchedule(id) {
   r.date = date; r.time = time; r.status = 'scheduled';
   r.history.push({ action:'תאריך נקבע – ' + date, date: new Date().toLocaleDateString('he-IL').substring(0,5) });
   closeModal('action-modal');
-  saveToStorage();
+  _saveLocalStorage();
   toast('תאריך נקבע בהצלחה! 📅', 'success');
   renderDashboard(); renderRecords();
 }
@@ -1344,7 +1513,7 @@ function scheduleLesson() {
   const r = records.find(x => x.id == cid);
   r.date = date; r.time = time; r.notes = notes; r.status = 'scheduled';
   r.history.push({ action:'תאריך נקבע – ' + date, date: new Date().toLocaleDateString('he-IL').substring(0,5) });
-  saveToStorage();
+  _saveLocalStorage();
   toast('תאריך נקבע בהצלחה! 📅', 'success');
   renderSchedulePage();
 }
@@ -1353,7 +1522,7 @@ function actionConfirm(id) {
   const r = records.find(x => x.id === id);
   r.status = 'confirmed';
   r.history.push({ action:'אישר/ה נוכחות', date: new Date().toLocaleDateString('he-IL').substring(0,5) });
-  saveToStorage();
+  _saveLocalStorage();
   toast(r.first + ' ' + r.last + ' – שיעור אושר ✅', 'success');
   renderRecords(); renderDashboard();
 }
@@ -1376,7 +1545,7 @@ function confirmCancel(id) {
   r.status = 'cancelled'; r.notes = reason || r.notes;
   r.history.push({ action:'בוטל – ' + (reason || 'ללא סיבה'), date: new Date().toLocaleDateString('he-IL').substring(0,5) });
   closeModal('action-modal');
-  saveToStorage();
+  _saveLocalStorage();
   toast(r.first + ' ' + r.last + ' – שיעור בוטל ❌', 'warning');
   renderRecords(); renderDashboard();
 }
@@ -1406,7 +1575,7 @@ function confirmPostpone(id) {
   r.date = newDate; r.time = newTime; r.status = 'postponed';
   r.history.push({ action:`נדחה מ-${oldDate} ל-${newDate}`, date: new Date().toLocaleDateString('he-IL').substring(0,5) });
   closeModal('action-modal');
-  saveToStorage();
+  _saveLocalStorage();
   toast(r.first + ' ' + r.last + ' – שיעור נדחה ⏩', 'warning');
   renderRecords(); renderDashboard();
 }
@@ -1492,7 +1661,7 @@ function simulateScenario(type) {
 const STORAGE_KEY = 'torah_scheduler_records';
 const STORAGE_META = 'torah_scheduler_meta';
 
-function saveToStorage() {
+function _saveLocalStorage() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
     localStorage.setItem(STORAGE_META, JSON.stringify({ savedAt: new Date().toISOString(), count: records.length }));
@@ -1548,7 +1717,7 @@ function updateSaveIndicator(state) {
 function withSave(fn) {
   return function(...args) {
     const result = fn.apply(this, args);
-    saveToStorage();
+    _saveLocalStorage();
     return result;
   };
 }
@@ -1575,7 +1744,7 @@ function importData(e) {
       if(!confirm('ייבוא יחליף את כל הנתונים הקיימים (' + records.length + ' רשומות). להמשיך?')) return;
       records = parsed;
       nextId = Math.max(...records.map(r => r.id)) + 1;
-      saveToStorage();
+      _saveLocalStorage();
       renderDashboard(); renderRecords();
       toast('ייבוא הצליח! ' + records.length + ' רשומות נטענו ✓', 'success');
     } catch(err) {
@@ -1779,7 +1948,7 @@ function confirmComplete(id) {
   r.history.push({ action:'שיעור התקיים ✓', date: new Date().toLocaleDateString('he-IL').substring(0,5) });
   r.history.push({ action:'תזכורת תיאום מחדש: ' + r.nextFollowup, date: new Date().toLocaleDateString('he-IL').substring(0,5) });
   closeModal('action-modal');
-  saveToStorage();
+  _saveLocalStorage();
   toast(r.first + ' – שיעור הושלם! תזכורת נקבעה ל-' + r.nextFollowup + ' 🔔', 'success');
   renderDashboard(); renderRecords();
 }
@@ -1831,7 +2000,7 @@ function renderFollowupPage() {
     const canSchedule = diff !== null && diff <= 0;
     return `<tr>
       <td><strong>${r.first} ${r.last}</strong></td>
-      <td style="direction:ltr;text-align:right">${r.phone}</td>
+      <td style="direction:ltr;text-align:right">${r.phone}<br>${r.rabbi ? `<span class="text-xs text-muted">🧑‍🏫 ${r.rabbi}</span><br>` : ``}${r.address ? `<span class="text-xs text-muted">📍 ${r.address}</span>` : ``}</td>
       <td>${r.type}</td>
       <td>${r.completedDate || '—'}</td>
       <td>${r.nextFollowup || '—'}<br>${daysBadge}</td>
@@ -1839,8 +2008,9 @@ function renderFollowupPage() {
       <td>
         <div style="display:flex;gap:var(--space-1);flex-wrap:wrap">
           ${canSchedule ? `<button class="btn btn-primary" style="padding:3px 8px;font-size:var(--text-xs)" onclick="scheduleAfterFollowup(${r.id})">📅 קבע שיעור</button>` : ''}
-          <button class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#25D366;color:white" onclick="quickWa(${r.id})">📱 WA</button>
-          <button class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="showHistory(${r.id})">היסטוריה</button>
+          <button type="button" class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#25D366;color:white" onclick="quickWa(${r.id})">📱 WA</button>
+          <button type="button" class="btn btn-ghost" style="padding:3px 8px;font-size:var(--text-xs)" onclick="showHistory(${r.id})">היסטוריה</button>
+          <button type="button" class="btn" style="padding:3px 8px;font-size:var(--text-xs);background:#e53e3e;color:white" onclick="deleteRecord(${r.id})">🗑️ מחק</button>
         </div>
       </td>
     </tr>`;
@@ -1852,7 +2022,7 @@ function scheduleAfterFollowup(id) {
   r.status = 'new';
   r.date = ''; r.time = '';
   r.history.push({ action:'נפתח לתיאום שיעור חדש (אחרי חצי שנה)', date: new Date().toLocaleDateString('he-IL').substring(0,5) });
-  saveToStorage();
+  _saveLocalStorage();
   toast(r.first + ' ' + r.last + ' – ניתן לתאם שיעור חדש! 🟢', 'success');
   renderFollowupPage(); renderDashboard();
   quickSchedule(id);
@@ -1995,7 +2165,7 @@ function sendWhatsApp() {
   const templateNames = { schedule:'קביעת תאריך', remind:'תזכורת', confirm:'אישור', postpone:'דחייה', cancel:'ביטול', custom:'מותאם' };
   waLog.unshift({ name: r.first + ' ' + r.last, phone: r.phone, template: templateNames[currentTemplate] || currentTemplate, time: new Date().toLocaleTimeString('he-IL', {hour:'2-digit',minute:'2-digit'}) });
   r.history.push({ action: 'הודעת וואטסאפ נשלחה – ' + (templateNames[currentTemplate] || ''), date: new Date().toLocaleDateString('he-IL').substring(0,5) });
-  saveToStorage();
+  _saveLocalStorage();
   renderWaLog();
   toast('פותח WhatsApp... ✓', 'success');
 }
@@ -2083,7 +2253,12 @@ function sendBulk() {
 
 (function() {
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    const swCode = atob('CmNvbnN0IENBQ0hFX05BTUUgPSAndG9yYWgtc2NoZWR1bGVyLXYxJzsKY29uc3QgdXJsc1RvQ2FjaGUgPSBbJy4nLCBsb2NhdGlvbi5ocmVmXTsKCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignaW5zdGFsbCcsIGUgPT4gewogIGUud2FpdFVudGlsKAogICAgY2FjaGVzLm9wZW4oQ0FDSEVfTkFNRSkudGhlbihjYWNoZSA9PiBjYWNoZS5hZGRBbGwodXJsc1RvQ2FjaGUpKS5jYXRjaCgoKSA9PiB7fSkKICApOwogIHNlbGYuc2tpcFdhaXRpbmcoKTsKfSk7CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2FjdGl2YXRlJywgZSA9PiB7CiAgZS53YWl0VW50aWwoY2FjaGVzLmtleXMoKS50aGVuKGtleXMgPT4KICAgIFByb21pc2UuYWxsKGtleXMuZmlsdGVyKGsgPT4gayAhPT0gQ0FDSEVfTkFNRSkubWFwKGsgPT4gY2FjaGVzLmRlbGV0ZShrKSkpCiAgKSk7CiAgc2VsZi5jbGllbnRzLmNsYWltKCk7Cn0pOwoKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGUgPT4gewogIGUucmVzcG9uZFdpdGgoCiAgICBjYWNoZXMubWF0Y2goZS5yZXF1ZXN0KS50aGVuKGNhY2hlZCA9PiBjYWNoZWQgfHwgZmV0Y2goZS5yZXF1ZXN0KS5jYXRjaCgoKSA9PiBjYWNoZWQpKQogICk7Cn0pOwo=');
+    const blob = new Blob([swCode], {type: 'text/javascript'});
+    const swUrl = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(swUrl).then(reg => {
+      console.log('SW registered');
+    }).catch(err => console.log('SW error:', err));
   }
 })();
 
@@ -2144,10 +2319,186 @@ if(dataLoaded) {
   }, 300);
 } else {
   // First run with demo data – save it
-  setTimeout(() => saveToStorage(), 500);
+  setTimeout(() => _saveLocalStorage(), 500);
 }
 renderDashboard();
 updateFollowupKpis();
+
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  if (!btn.hasAttribute('type')) btn.setAttribute('type','button');
+});
+
+
+/* ===== SUPABASE SYNC ===== */
+const _sb = window.supabase.createClient('https://aembvvholjtkbyzsuryg.supabase.co', 'sb_publishable_UuV1kmihdP_MAcTRjVBU3g_073ZkAly');
+let _isSaving = false;
+let _isLoading = false;
+
+function generateRecordId() {
+  return Number(String(Date.now()) + String(Math.floor(Math.random()*9000)+1000));
+}
+
+function toCloud(r) {
+  return {
+    record_id: Number(r.id),
+    first: r.first||'', last: r.last||'', phone: r.phone||'',
+    type: r.type||'', status: r.status||'new', source: r.source||'',
+    rabbi: r.rabbi||'', address: r.address||'',
+    date: r.date||'', time: r.time||'', notes: r.notes||'',
+    attempts: Number(r.attempts||0),
+    history: r.history||[],
+    completedDate: r.completedDate||'',
+    nextFollowup: r.nextFollowup||''
+  };
+}
+
+function fromCloud(row) {
+  return {
+    id: row.record_id, first: row.first||'', last: row.last||'',
+    phone: row.phone||'', type: row.type||'', status: row.status||'new',
+    source: row.source||'', rabbi: row.rabbi||'', address: row.address||'',
+    date: row.date||'', time: row.time||'', notes: row.notes||'',
+    attempts: Number(row.attempts||0),
+    history: Array.isArray(row.history)?row.history:[],
+    completedDate: row.completedDate||'', nextFollowup: row.nextFollowup||''
+  };
+}
+
+async function cloudUpsert(rec) {
+  const { error } = await _sb.from('records').upsert([toCloud(rec)], {onConflict:'record_id'});
+  if(error) {
+    console.error('cloudUpsert error:', error);
+    toast('שגיאה בענן: '+(error.message||''), 'error');
+    return false;
+  }
+  return true;
+}
+
+async function cloudDelete(id) {
+  const { error } = await _sb.from('records').delete().eq('record_id', Number(id));
+  if(error) { console.error('cloudDelete error:', error); return false; }
+  return true;
+}
+
+async function loadCloud() {
+  if(_isSaving) return;
+  _isLoading = true;
+  const { data, error } = await _sb.from('records').select('*').order('record_id');
+  _isLoading = false;
+  if(error) { console.error('loadCloud error:', error); toast('שגיאה בטעינה מהענן','error'); return false; }
+  records = (data||[]).map(fromCloud);
+  nextId = records.reduce((m,r)=>Math.max(m,Number(r.id||0)),0)+1;
+  localStorage.setItem('records', JSON.stringify(records));
+  renderRecords(); renderDashboard();
+  if(typeof updateFollowupKpis==='function') updateFollowupKpis();
+  return true;
+}
+
+// Patch addRecord to use generateRecordId and save directly to cloud
+const _origAddRecord = addRecord;
+addRecord = function() {
+  const first   = (document.getElementById('new-first') ||{value:''}).value.trim();
+  const last    = (document.getElementById('new-last')  ||{value:''}).value.trim();
+  const phone   = (document.getElementById('new-phone') ||{value:''}).value.trim();
+  const type    = (document.getElementById('new-type')  ||{value:''}).value||'';
+  const source  = (document.getElementById('new-source')||{value:''}).value.trim();
+  const notes   = (document.getElementById('new-notes') ||{value:''}).value.trim();
+  const rabbi   = (document.getElementById('new-rabbi') ||{value:''}).value.trim();
+  const address = (document.getElementById('new-address')||{value:''}).value.trim();
+  if(!first||!last||!phone) { toast('יש למלא שם וטלפון','error'); return; }
+  const newId = generateRecordId();
+  const rec = {
+    id:newId, first, last, phone, type, status:'new',
+    source, rabbi, address, date:'', time:'', notes, attempts:0,
+    history:[{action:'נוצרה רשומה',date:new Date().toLocaleDateString('he-IL').substring(0,5)}]
+  };
+  records.push(rec);
+  nextId = newId + 1;
+  closeModal('add-record-modal');
+  ['new-first','new-last','new-phone','new-source','new-notes','new-rabbi','new-address'].forEach(id=>{
+    const el=document.getElementById(id); if(el) el.value='';
+  });
+  const typeEl=document.getElementById('new-type'); if(typeEl) typeEl.selectedIndex=0;
+  localStorage.setItem('records', JSON.stringify(records));
+  renderRecords(); renderDashboard();
+  if(typeof updateFollowupKpis==='function') updateFollowupKpis();
+  _isSaving = true;
+  cloudUpsert(rec).then(ok=>{
+    _isSaving = false;
+    if(ok) toast(first+' '+last+' נוסף ✅ (ID:'+newId+')','success');
+  });
+};
+
+// Patch deleteRecord
+deleteRecord = async function(id) {
+  const r = records.find(x=>x.id===id);
+  if(!r) return;
+  if(!confirm('למחוק את '+r.first+' '+r.last+'?')) return;
+  records = records.filter(x=>x.id!==id);
+  localStorage.setItem('records', JSON.stringify(records));
+  renderRecords(); renderDashboard();
+  if(typeof updateFollowupKpis==='function') updateFollowupKpis();
+  toast(r.first+' '+r.last+' – נמחק ✅','success');
+  await cloudDelete(id);
+};
+
+// Patch saveToStorage for updates (status changes etc.)
+const _origSaveLocal = _saveLocalStorage;
+async function saveToStorage() {
+  _isSaving = true;
+  _saveLocalStorage();
+  const snap = [...records];
+  for(const rec of snap) { await cloudUpsert(rec); }
+  _isSaving = false;
+  const ind = document.getElementById('save-indicator');
+  if(ind) { ind.textContent='נשמר ✅'; setTimeout(()=>{if(ind)ind.textContent='שמירה אוטומטית פעילה';},2000); }
+}
+
+async function initSupabase() {
+  toast('מתחבר ל-Supabase...','info');
+  const ok = await loadCloud();
+  if(!ok) { toast('לא הצלחתי להתחבר ל-Supabase ❌','error'); return; }
+  toast('מחובר ל-Supabase ✅','success');
+  _sb.channel('sync')
+    .on('postgres_changes',{event:'*',schema:'public',table:'records'},()=>{ if(!_isSaving) loadCloud(); })
+    .subscribe();
+}
+
+setTimeout(initSupabase, 600);
+
 </script>
+
+<div class="nav-mobile">
+  <button class="active" onclick="showPage('dashboard', this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+    <span>בית</span>
+  </button>
+  <button onclick="showPage('records', this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+    <span>לקוחות</span>
+  </button>
+  <button onclick="showPage('schedule', this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>יומן</span>
+  </button>
+  <button onclick="showPage('followup', this)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+    <span>מעקב</span>
+  </button>
+  <button onclick="openModal('add-record-modal')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    <span>הוסף</span>
+  </button>
+</div>
+
+
+<!-- FAB Add Button (mobile) -->
+<button class="fab-add" onclick="openModal('add-record-modal')" aria-label="הוסף לקוח חדש">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+  </svg>
+</button>
 </body>
 </html>
