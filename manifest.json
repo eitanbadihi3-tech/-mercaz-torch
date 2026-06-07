@@ -1,20 +1,29 @@
 {
-  "name": "מרכז טורש – ניהול לקוחות",
-  "short_name": "מרכז טורש",
-  "description": "מערכת לניהול לקוחות ותיאום שיעורים עבור מרכז טורש",
+  "id": "./",
+  "name": "מערכת שיעורים",
+  "short_name": "שיעורים",
+  "description": "מערכת לניהול רשומות, תיאום שיעורים ומעקב.",
+  "lang": "he",
+  "dir": "rtl",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#f7f6f2",
   "theme_color": "#01696f",
-  "lang": "he",
-  "dir": "rtl",
-  "orientation": "portrait-primary",
   "categories": ["productivity", "utilities"],
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%2301696f'/%3E%3Ctext x='256' y='340' text-anchor='middle' font-size='280' fill='white' font-family='Arial' font-weight='bold'%3E%D7%A7%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%2301696f'/%3E%3Ctext x='256' y='340' text-anchor='middle' font-size='280' fill='white' font-family='Arial' font-weight='bold'%3E%D7%A7%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
   ]
 }
